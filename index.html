@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Praxis | Craftsmanship Community</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <p id="navbar-title">Praxis</p>
+    <div class="nav-links" id="navbar-menu">
+        <a href="#products" class="navbar-text">Products</a>
+        <a href="#audience" class="navbar-text">Resources</a>
+        <a href="#team" class="navbar-text">Team</a>
+        <a href="#contact" class="navbar-text">Contact</a>
+        <button id="sales-button">Contact Sales</button>
+    </div>
+    <button id="hamburger-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+  
+  <section class="hero-section">
+      <h1 class="center-title">Praxis</h1>
+      <p id="hero-text">
+        Learn the skills to create with your hands, discover goods made with soul, and give your most
+        cherished possessions a second life through our guild of master artisans.
+      </p>
+      <button id="hero-button">Learn More</button>
+  </section>
+  <section id="about" class="section about-us">
+    <h2 class="section-title">About Us</h2>
+    <div class="about-content">
+        <img src="https://img.icons8.com/ios/100/null/chisel-and-hammer.png" alt="Craftsmanship Icon" class="about-logo"/>
+      <p>
+        Praxis is a community-driven platform dedicated to preserving and sharing the art of craftsmanship. 
+        We connect master artisans with those eager to learn, repair, and create, ensuring that traditional skills are passed down through generations.
+      </p>
+      <p>
+        The idea for Praxis was born from a simple, frustrating experience: trying to get a beloved pair of leather boots resoled and discovering the last local cobbler had retired. This personal search revealed a much larger problem: foundational craft skills are disappearing, leaving us reliant on a culture of disposable, mass-produced goods that fill our landfills. We saw an opportunity not just to mourn this loss, but to reverse it.
+      </p>
+    </div>
+  </section>
+  <section id="audience" class="section audience-toggle">
+    <h2 class="section-title">For Our Community</h2>
+    <div class="toggle-container">
+      <button class="toggle-btn active" data-audience="learners">For Learners</button>
+      <button class="toggle-btn" data-audience="artisans">For Artisans</button>
+    </div>
+    <div class="audience-content active" id="learners-content">
+      <h3>Start Your Craft Journey</h3>
+      <p>
+        As a learner at Praxis, you'll gain access to our comprehensive Trade-in-a-Box kits, expert-led workshops, and a supportive community of fellow craft enthusiasts. Whether you're starting from scratch or looking to refine your skills, we provide the tools and guidance to help you create beautiful, lasting pieces with your own hands.
+      </p>
+    </div>
+    <div class="audience-content" id="artisans-content">
+      <h3>Join Our Master Artisans</h3>
+      <p>
+        As an artisan at Praxis, you'll gain access to our premium marketplace to showcase and sell your creations to an appreciative audience. We provide marketing support, business tools, and a community of like-minded craftspeople to help you grow your practice.
+      </p>
+    </div>
+  </section>
+  <section id="products" class="section product-section">
+    <h2 class="section-title">Our Products</h2>
+    <div class="carousel-container">
+      <div class="product-list">
+        <div class="carousel-card">
+          <h3 class="card-title">Trade-in-a-Box Kits</h3>
+          <img src="assets/images/kit image.png" alt="Leatherworking tools" class="card-image">
+          <p class="card-description">
+            Comprehensive, high-quality kits for learning crafts like leatherworking. Each includes professional tools, materials, and access to HD video tutorials.
+          </p>
+        </div>
+        <div class="carousel-card">
+          <h3 class="card-title">Artisan Marketplace</h3>
+          <img src="assets/images/marketplace.png" alt="Handcrafted goods on a shelf" class="card-image">
+          <p class="card-description">A curated marketplace where certified artisans sell durable, beautifully crafted goods. Built on rigorous quality standards with branding support.</p>
+        </div>
+        <div class="carousel-card">
+          <h3 class="card-title">Repair & Restoration</h3>
+          <img src="assets/images/workers.png" alt="A person repairing a shoe" class="card-image">
+          <p class="card-description">Connect with artisans for high-quality repairs on items like shoes and clothing. Get quotes online and support the circular economy.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="faq" class="section faq-section">
+    <h2 class="section-title">Frequently Asked Questions</h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          How do I get started with a craft? <i class="fas fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Getting started is easy! Browse our Trade-in-a-Box kits to find a craft that interests you. Each kit comes with all the tools, materials, and step-by-step video tutorials you need to begin your journey. We recommend starting with our beginner-friendly kits.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          How do artisans become certified? <i class="fas fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Our certification process involves a thorough review of an artisan's portfolio, technical skills, and commitment to quality craftsmanship. Applicants must demonstrate mastery of their craft. This ensures customers receive only the highest quality handmade goods.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          What is your repair process? <i class="fas fa-chevron-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          <p>Simply submit photos of your item through our online form. Our team will assess the repair needs and provide a quote. Once approved, you can mail your item to our facility. Our certified artisans will restore your item using traditional techniques and quality materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="team" class="section team-section">
+    <h2 class="section-title">Meet Our Founders</h2>
+    <div class="team-grid">
+      <div class="team-card">
+        <img src="assets/images/solo.jpg" alt="Profile of Alex Morgan" class="team-img">
+        <div class="team-info">
+          <h3 class="team-name">Solomon Nderitu</h3>
+          <div class="team-role">CEO & Co-Founder</div>
+          <p class="team-bio">Former product designer with a passion for sustainable craftsmanship. Alex started Praxis after struggling to find someone to repair his grandfather's leather boots.</p>
+        </div>
+      </div>
+      <div class="team-card">
+        <img src="assets/images/bemos.jpg" alt="Profile of Jamie Chen" class="team-img">
+        <div class="team-info">
+          <h3 class="team-name">Benson Mose</h3>
+          <div class="team-role">Head of Artisan Relations</div>
+          <p class="team-bio">Fourth-generation tailor dedicated to preserving traditional techniques for future generations.</p>
+        </div>
+      </div>
+      
+  </section>
+  <section class="brand-bar">
+    <div class="slogan-container">
+      <div class="slogan">Craftsmanship ·</div>
+      <div class="slogan">Sustainability ·</div>
+      <div class="slogan">Community ·</div>
+      <div class="slogan">Heritage ·</div>
+      <div class="slogan">Quality ·</div>
+      <div class="slogan">Craftsmanship ·</div>
+      <div class="slogan">Sustainability ·</div>
+      <div class="slogan">Community ·</div>
+    </div>
+  </section>
+  <section id="chatbot" class="section chatbot-section">
+    <h2 class="section-title">Need Help? Ask Our Bot</h2>
+    <div class="chatbot-container">
+      <div class="chat-header">Praxis Assistant</div>
+      <div class="chat-messages" id="chat-messages">
+        <div class="message bot-message">Hello! I'm the Praxis Assistant. How can I help you today?</div>
+        <div class="message bot-message">You can ask about our products or how to get started.</div>
+      </div>
+      <div class="chat-input">
+        <input type="text" id="chat-input-field" placeholder="Type your message here...">
+        <button id="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="section contact-section">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-container">
+      <form id="contact-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" required>
+          <div class="error" id="name-error">Please enter your name</div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" required>
+          <div class="error" id="email-error">Please enter a valid email</div>
+        </div>
+        <div class="form-group">
+          <label for="message">Your Message</label>
+          <textarea id="message" required></textarea>
+          <div class="error" id="message-error">Please enter your message</div>
+        </div>
+        <button type="submit" class="submit-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+  <footer>
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>Praxis</h3>
+        <p>Preserving craftsmanship for future generations.</p>
+        <div class="social-links">
+          <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+          <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Resources</h3>
+        <ul class="footer-links">
+          <li><a href="#">Learning Guides</a></li>
+          <li><a href="#">Community Forum</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contact Info</h3>
+        <ul class="footer-links">
+          <li><i class="fas fa-map-marker-alt"></i> 123 Craft St, Artisan City</li>
+          <li><i class="fas fa-phone"></i> (555) 123-4567</li>
+          <li><i class="fas fa-envelope"></i> info@praxis.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2024 Praxis Craftsmanship Community. All rights reserved.</p>
+      <div class="visitor-count">Site Visits: <span id="visitor-count">0</span></div>
+    </div>
+  </footer>
+  <div class="theme-toggle" id="theme-toggle">
+    <i class="fas fa-moon"></i>
+  </div>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
