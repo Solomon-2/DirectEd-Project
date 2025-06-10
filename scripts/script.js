@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // --- Praxis Assistant Context ---
   const systemContext = `
 You are the Praxis Assistant, a helpful AI guide for the Praxis Craftsmanship Community. Your goal is to answer questions about Praxis based on the following information. Be friendly, concise, and helpful.
 
@@ -25,7 +24,6 @@ Our Vision & Long-Term Goal:
 Our long-term vision is to build a thriving global community centered around craftsmanship, sustainability, and heritage. We aim to make traditional skills accessible to everyone and to be the leading platform for high-quality, handcrafted goods and expert repairs, thereby reducing waste and fostering a deeper appreciation for the things we own.
 `;
 
-  // --- Hamburger Menu Logic ---
   const hamburgerBtn = document.getElementById('hamburger-btn');
   const navbarMenu = document.getElementById('navbar-menu');
   
@@ -33,7 +31,6 @@ Our long-term vision is to build a thriving global community centered around cra
     navbarMenu.classList.toggle('is-open');
   });
 
-  // Close menu when a link is clicked
   const menuLinks = navbarMenu.querySelectorAll('a, button');
   menuLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -43,7 +40,7 @@ Our long-term vision is to build a thriving global community centered around cra
     });
   });
 
-  // Visitor counter using localStorage
+
   let visitCount = localStorage.getItem('siteVisitCount');
   if (visitCount) {
     visitCount = parseInt(visitCount) + 1;
@@ -53,7 +50,7 @@ Our long-term vision is to build a thriving global community centered around cra
   localStorage.setItem('siteVisitCount', visitCount);
   document.getElementById('visitor-count').textContent = visitCount;
 
-  // Audience toggle logic
+  
   const toggleButtons = document.querySelectorAll('.toggle-btn');
   const audienceContents = document.querySelectorAll('.audience-content');
   toggleButtons.forEach(button => {
@@ -66,7 +63,7 @@ Our long-term vision is to build a thriving global community centered around cra
     });
   });
 
-  // FAQ accordion - only one can be open at a time
+
   const faqItems = document.querySelectorAll('.faq-item');
   faqItems.forEach(clickedItem => {
     const question = clickedItem.querySelector('.faq-question');
@@ -79,7 +76,6 @@ Our long-term vision is to build a thriving global community centered around cra
     });
   });
 
-  // --- Puter JS Chatbot Integration with Context ---
   const chatSendBtn = document.getElementById('chat-send-btn');
   const chatInputField = document.getElementById('chat-input-field');
   const chatMessages = document.getElementById('chat-messages');
@@ -88,7 +84,7 @@ Our long-term vision is to build a thriving global community centered around cra
     const messageText = chatInputField.value.trim();
     if (!messageText) return;
 
-    // Display user's message
+    // Display the user's message
     const userMessage = document.createElement('div');
     userMessage.className = 'message user-message';
     userMessage.textContent = messageText;
@@ -96,7 +92,7 @@ Our long-term vision is to build a thriving global community centered around cra
     chatInputField.value = '';
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
-    // Typing indicator
+    // User is typing indicator
     const botTyping = document.createElement('div');
     botTyping.className = 'message bot-message';
     botTyping.textContent = 'Praxis Assistant is typing...';
@@ -104,7 +100,7 @@ Our long-term vision is to build a thriving global community centered around cra
     chatMessages.scrollTop = chatMessages.scrollHeight;
 
     try {
-      // Send the system context and user message to Puter AI
+      //Send the system context and user messaga to Puter
       const response = await puter.ai.chat([
         { role: 'system', content: systemContext },
         { role: 'user', content: messageText }
@@ -118,7 +114,7 @@ Our long-term vision is to build a thriving global community centered around cra
     }
     chatMessages.scrollTop = chatMessages.scrollHeight;
   });
-  // --- End Puter JS Chatbot Integration ---
+  
 
   // Contact form validation
   const contactForm = document.getElementById('contact-form');
@@ -160,7 +156,7 @@ Our long-term vision is to build a thriving global community centered around cra
     }
   });
 
-  // Theme toggle
+  //Theme toggle
   const themeToggle = document.getElementById('theme-toggle');
   const themeIcon = themeToggle.querySelector('i');
   const body = document.body;
@@ -187,7 +183,7 @@ Our long-term vision is to build a thriving global community centered around cra
   const savedTheme = localStorage.getItem('theme') || 'light';
   applyTheme(savedTheme);
 
-  // Smooth scrolling for anchor links
+  //Smooth scrolling for anchor links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       e.preventDefault();

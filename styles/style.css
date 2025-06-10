@@ -95,7 +95,7 @@
 
     /* Hamburger Menu Button */
     #hamburger-btn {
-        display: none; /* Hidden by default */
+        display: none; 
         background: none;
         border: none;
         color: var(--primary);
@@ -171,7 +171,7 @@
       background-color: var(--primary);
     }
 
-    /* About section */
+
     .about-us {
       background-color: var(--accent);
       transition: background-color 0.3s;
@@ -422,7 +422,7 @@
       font-size: 1rem;
     }
 
-    /* Brand bar */
+
     .brand-bar {
       background-color: var(--primary);
       padding: 30px 0;
@@ -730,10 +730,9 @@
       .slogan { font-size: 1.5rem; }
       .chatbot-container { margin: 0 10px; }
       
-      /* --- Hamburger Menu Styles --- */
       .nav-links {
         position: absolute;
-        top: 70px; /* Below navbar */
+        top: 70px; 
         left: 0;
         width: 100%;
         background-color: var(--card-bg);
@@ -742,12 +741,12 @@
         gap: 0;
         box-shadow: 0 4px 10px rgba(0,0,0,0.1);
         overflow: hidden;
-        max-height: 0; /* Initially hidden */
+        max-height: 0; 
         transition: max-height 0.4s ease-in-out;
       }
 
       .nav-links.is-open {
-        max-height: 500px; /* Reveal the menu */
+        max-height: 500px; 
       }
 
       .nav-links a, .nav-links button {
